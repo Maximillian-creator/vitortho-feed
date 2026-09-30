@@ -10,6 +10,11 @@ on:
     - cron: "15 23 * * *"
     - cron: "15 11 * * *"
   workflow_dispatch:
+  # Een codewijziging draait meteen één keer, zodat hij direct bewezen is. De
+  # bot-commits raken alleen de xml/csv en starten dus geen nieuwe run.
+  push:
+    branches: [main]
+    paths: ["scraper.py", "requirements.txt", ".github/workflows/update_feed.yml"]
 
 permissions:
   contents: write
