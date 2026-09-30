@@ -1,0 +1,44 @@
+name: Vitortho Feed Updater
+
+# Vitortho's eigen feed, met de voorraad uit hun B2B (zie scraper.py).
+# Stock Sync leest "NOW | Vitortho" om 04:00 NL; deze run is ruim daarvoor klaar.
+# 23:15 UTC = 01:15 NL in de zomer, 00:15 in de winter; 11:15 UTC voor overdag.
+# Nooit tussen 02:00 en 06:15 NL: dat is het remove-venster van Stock Sync.
+
+on:
+  schedule:
+    - cron: "15 23 * * *"
+    - cron: "15 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Python instellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Dependencies installeren
+        run: pip install -r requirements.txt
+      - name: Tests
+        run: pip install pytest && python -m pytest -q test_feed.py
+      - name: Scraper draaien
+        env:
+          VITORTHO_GEBRUIKER: ${{ secrets.VITORTHO_GEBRUIKER }}
+          VITORTHO_WACHTWOORD: ${{ secrets.VITORTHO_WACHTWOORD }}
+        run: python scraper.py
+      - name: XML committen en pushen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add vitortho_feed.xml vitortho_verschillen.csv
+          git diff --staged --quiet || git commit -m "🔄 Feed bijgewerkt: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
+          git push
