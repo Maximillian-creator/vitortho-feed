@@ -110,7 +110,10 @@ def _verborgen_velden(pagina: str) -> dict:
 
 
 def ingelogd(pagina: str) -> bool:
-    return "Account/Logout.aspx" in pagina
+    """Ingelogd = geen inlogformulier op de pagina. Sinds AsterCart v26.42 (02-10) staat de
+    uitloglink óók op de inlogpagina; alleen daarop letten liet de scraper denken dat hij was
+    ingelogd, terwijl elke productpagina het inlogformulier toonde (rem greep in, 323/323)."""
+    return "TextBoxPassword" not in pagina and ("Account/Logout.aspx" in pagina or "Welkom" in pagina)
 
 
 def login(sessie: requests.Session) -> None:

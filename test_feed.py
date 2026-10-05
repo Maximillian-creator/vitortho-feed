@@ -33,6 +33,9 @@ def test_betekenis_van_een_productpagina():
     assert s(UIT_ASS) == 0            # ook al staat de knop er nog
     assert s(WEG) == 0
     assert s(UITGELOGD) is None       # sessie weg: niet raden, Vitortho's code houden
+    # 05-10: de inlogpagina van AsterCart v26.42 heeft óók een uitloglink; het inlogformulier beslist
+    loginpagina = UIT + '<input name="ctl00$ContentPlaceHolder1$TextBoxPassword" type="password" />'
+    assert s(loginpagina) is None and not scraper.ingelogd(loginpagina)
     # 05-10: AsterCart kan de knop anders noemen of een <button> maken; de "houd mij op de hoogte"-
     # knop (leeg of met die tekst) blijft niet bestelbaar
     assert s(LEVERBAAR.replace('value="Bestellen"', 'value="In winkelwagen"')) == 2
