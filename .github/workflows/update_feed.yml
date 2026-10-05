@@ -6,14 +6,19 @@ name: Vitortho Feed Updater
 # 19:37 UTC (21:37 NL zomer) is ook met 6 uur vertraging vóór 04:00 NL klaar; 09:37 UTC
 # ververst overdag. Op :37 en niet op het hele uur: dan is GitHub het drukst.
 
-# GEPAUZEERD 05-10: het inloggen op de B2B mislukt sinds 02-10 (AsterCart v26.42). Elke
-# run is een mislukte inlogpoging, en te veel daarvan kan het account blokkeren. Weer aan
-# zodra Max' inlog werkt: de schedule- en push-regels hieronder terugzetten.
+# 05-10: van 02-10 tot 05-10 gepauzeerd (inloggen mislukte; nieuw wachtwoord door Max in
+# het secret gezet). Mislukt het inloggen weer: pauzeer opnieuw, want te veel mislukte
+# pogingen kunnen het account blokkeren.
 on:
-  # schedule:
-  #   - cron: "37 19 * * *"
-  #   - cron: "37 9 * * *"
+  schedule:
+    - cron: "37 19 * * *"
+    - cron: "37 9 * * *"
   workflow_dispatch:
+  # Een codewijziging draait meteen één keer, zodat hij direct bewezen is. De
+  # bot-commits raken alleen de xml/csv en starten dus geen nieuwe run.
+  push:
+    branches: [main]
+    paths: ["scraper.py", "requirements.txt", ".github/workflows/update_feed.yml"]
 
 permissions:
   contents: write
