@@ -35,8 +35,8 @@ eigen feed.
 
 ## Schema
 
-2× per dag, **01:15 en 13:15 NL** (zomertijd). Stock Sync leest om 04:00. Er loopt nooit
-een run tussen 02:00 en 06:15: dat is het remove-venster van Stock Sync.
+2× per dag, **21:37 en 11:37 NL** (zomertijd); GitHub start tot 6 uur te laat, dus ruim vóór Stock Sync (04:00).
+
 
 Een ronde leest ~323 productpagina's, rustig achter elkaar, in ~5 minuten.
 

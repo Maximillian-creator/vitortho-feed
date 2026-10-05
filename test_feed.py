@@ -3,6 +3,8 @@ dat de feed verder byte voor byte gelijk blijft, en dat de rem stopt.
 
     python -m pytest -q test_feed.py
 """
+import re
+
 import pytest
 
 import scraper
@@ -31,6 +33,18 @@ def test_betekenis_van_een_productpagina():
     assert s(UIT_ASS) == 0            # ook al staat de knop er nog
     assert s(WEG) == 0
     assert s(UITGELOGD) is None       # sessie weg: niet raden, Vitortho's code houden
+    # 05-10: AsterCart kan de knop anders noemen of een <button> maken; de "houd mij op de hoogte"-
+    # knop (leeg of met die tekst) blijft niet bestelbaar
+    assert s(LEVERBAAR.replace('value="Bestellen"', 'value="In winkelwagen"')) == 2
+    knop_button = (UIT + '<span id="ContentPlaceHolder1_ControlStockStatus_LabelStockVitOrtho">Uit voorraad leverbaar</span>'
+                   '<button type="submit" id="ContentPlaceHolder1_ButtonKoopnu" class="x"><i></i> Bestellen</button>')
+    assert s(knop_button) == 2
+    assert s(NIET.replace('value=""', 'value="Houd mij op de hoogte"')) == 0
+    assert s(NIET.replace('value=""', 'value="Bestellen"')) == 0          # label "Niet in voorraad" wint
+    d = scraper.diagnose(LEVERBAAR + '<input type="submit" id="ContentPlaceHolder1_X" value="€ 12,98" />')
+    assert d["ingelogd"] and "ButtonKoopnu='Bestellen'" in d["knoppen"]
+    x = [k for k in d["knoppen"] if k.startswith("X=")][0]
+    assert "€" not in x and not re.search(r"\d", x), x                     # geen prijzen in een openbaar log
 
 
 FEED = ('<?xml version="1.0" encoding="utf-8"?>\r\n<Producten>\r\n'

@@ -128,13 +128,40 @@ def login(sessie: requests.Session) -> None:
                          "Geen feed weggeschreven.")
 
 
+_GEEN_BESTELLING = re.compile(r"hoogte|mail|attendeer|notify|niet", re.I)
+_BEDRAG = re.compile(r"€|\d+[.,]\d{2}")
+
+
+def _knop(pagina: str) -> str | None:
+    """De waarde van de bestelknop (input of button), of None als hij er niet is."""
+    m = re.search(r'<input[^>]*id="ContentPlaceHolder1_ButtonKoopnu"[^>]*>', pagina)
+    if m:
+        w = re.search(r'value="([^"]*)"', m.group(0))
+        return html.unescape(w.group(1)).strip() if w else ""
+    m = re.search(r'<button[^>]*id="ContentPlaceHolder1_ButtonKoopnu"[^>]*>(.*?)</button>', pagina, re.S)
+    if m:
+        return html.unescape(re.sub(r"<[^>]+>", " ", m.group(1))).strip()
+    return None
+
+
+def diagnose(pagina: str) -> dict:
+    """Wat er op een productpagina staat, zonder prijzen of persoonsgegevens (het log van een
+    publieke repo is openbaar): de knoppen van de pagina, het voorraadlabel, en een paar woorden."""
+    knoppen = []
+    for tag in re.findall(r'<(?:input|button)[^>]*id="ContentPlaceHolder1_[^"]*"[^>]*>', pagina)[:12]:
+        i = re.search(r'id="ContentPlaceHolder1_([^"]*)"', tag).group(1)
+        w = re.search(r'value="([^"]*)"', tag)
+        waarde = _BEDRAG.sub("…", html.unescape(w.group(1))[:24]) if w else ""
+        knoppen.append(f"{i}={waarde!r}")
+    woorden = sorted({w.lower() for w in re.findall(r"(?i)bestellen|winkelwagen|houd mij op de hoogte|"
+                                                     r"niet in voorraad|uit voorraad leverbaar|beperkt in voorraad|"
+                                                     r"geblokkeerd|voorwaarden accepteren", pagina)})
+    return {"ingelogd": ingelogd(pagina), "knoppen": knoppen, "woorden": woorden}
+
+
 def lees_productpagina(pagina: str) -> dict:
     label = re.search(r'id="ContentPlaceHolder1_ControlStockStatus_LabelStockVitOrtho"[^>]*>([^<]*)<', pagina)
-    knop_tag = re.search(r'<input[^>]*id="ContentPlaceHolder1_ButtonKoopnu"[^>]*>', pagina)
-    knop = None
-    if knop_tag:
-        w = re.search(r'value="([^"]*)"', knop_tag.group(0))
-        knop = html.unescape(w.group(1)).strip() if w else ""
+    knop = _knop(pagina)
     return {"ingelogd": ingelogd(pagina),
             "weg": bool(re.search(r"product is niet gevonden", pagina, re.I)),
             "uit_assortiment": bool(re.search(r"uit assortiment", pagina, re.I)),
@@ -148,7 +175,9 @@ def status_van(b: dict) -> int | None:
         return None
     if b["weg"] or b["uit_assortiment"]:
         return 0
-    if b["knop"] == "Bestellen":
+    # bestelbaar = een knop met tekst die geen "houd mij op de hoogte" is (02-10: 'Bestellen';
+    # robuust voor 'Bestel' of 'In winkelwagen' als AsterCart de tekst verandert)
+    if b["knop"] and not _GEEN_BESTELLING.search(b["knop"]) and "niet in voorraad" not in b["label"].lower():
         return 1 if "beperkt" in b["label"].lower() else 2
     return 0
 
@@ -158,7 +187,10 @@ def reden_van(b: dict) -> str:
         return "niet gevonden in de B2B"
     if b["uit_assortiment"]:
         return "uit assortiment"
-    return b["label"] or ("bestelbaar" if b["knop"] == "Bestellen" else "niet bestelbaar")
+    return b["label"] or ("bestelbaar" if status_van(b) else "niet bestelbaar")
+
+
+DIAGNOSE: list = []     # de eerste drie pagina's, voor het log als de rem ingrijpt
 
 
 def lees_b2b(sessie: requests.Session, artikelen: list[str]) -> dict[str, dict]:
@@ -171,6 +203,8 @@ def lees_b2b(sessie: requests.Session, artikelen: list[str]) -> dict[str, dict]:
                 if r.status_code >= 500:
                     raise requests.HTTPError(f"HTTP {r.status_code}")
                 b = lees_productpagina(r.text)
+                if len(DIAGNOSE) < 3:
+                    DIAGNOSE.append({"artikel": nr, **diagnose(r.text), "label": b["label"], "knop": b["knop"]})
                 if not b["ingelogd"] and not opnieuw_ingelogd:
                     login(sessie)                 # sessie verlopen: één keer opnieuw
                     opnieuw_ingelogd = True
@@ -215,7 +249,13 @@ def main() -> None:
     print("Ingelogd op de B2B")
     b2b = lees_b2b(sessie, [p["artikel"] for p in lijst])
     codes = {nr: status_van(b) for nr, b in b2b.items()}
-    keur(len(lijst), codes)
+    try:
+        keur(len(lijst), codes)
+    except SystemExit:
+        print("\nDiagnose (eerste drie productpagina's, zonder prijzen):")
+        for d in DIAGNOSE:
+            print(f"  {d}")
+        raise
     nieuw = pas_toe(xml, {nr: c for nr, c in codes.items() if c is not None})
     with open(OUTPUT_FILE, "w", encoding="utf-8", newline="") as f:
         f.write(nieuw)
