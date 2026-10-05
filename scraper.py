@@ -127,6 +127,16 @@ def login(sessie: requests.Session) -> None:
                    "ctl00$ContentPlaceHolder1$ButtonLogin": "Login"})
     antwoord = sessie.post(B2B + LOGIN_PAD, data=velden, timeout=60)
     if not ingelogd(antwoord.text) and not ingelogd(sessie.get(B2B + "/", timeout=60).text):
+        # wat de B2B zelf zegt (foutlabels), zonder inloggegevens: het log is openbaar
+        meldingen = {re.sub(r"\s+", " ", html.unescape(m)).strip()
+                     for m in re.findall(r'<(?:span|div|p)[^>]*(?:Error|Fout|Melding|Message|Validator|alert)[^>]*>([^<]{3,160})<',
+                                         antwoord.text, re.I)}
+        meldingen |= {m.strip() for m in re.findall(r"(?i)[^<>]{0,80}(?:onjuist|ongeldig|geblokkeerd|verlopen|"
+                                                    r"wachtwoord|invalid|locked)[^<>]{0,80}", antwoord.text)
+                      if "TextBox" not in m and gebruiker not in m}
+        print(f"Antwoord van de B2B op de login: HTTP {antwoord.status_code}, {antwoord.url.replace(B2B, '')}")
+        for m in sorted(meldingen)[:6]:
+            print(f"  B2B zegt: {m[:200]}")
         raise SystemExit("STOP: inloggen op de B2B mislukt (gebruiker/wachtwoord of loginpagina veranderd). "
                          "Geen feed weggeschreven.")
 
