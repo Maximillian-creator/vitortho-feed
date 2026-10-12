@@ -21582,8 +21582,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>1</VoorraadstatusCode>
-    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>2</VoorraadstatusCode>
+    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>6508</Artikelnummer>
@@ -24449,8 +24449,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>2</VoorraadstatusCode>
-    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>1</VoorraadstatusCode>
+    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>2405</Artikelnummer>
@@ -55306,8 +55306,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>1</VoorraadstatusCode>
-    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>0</VoorraadstatusCode>
+    <VoorraadstatusToelichting>niet op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>72601</Artikelnummer>
