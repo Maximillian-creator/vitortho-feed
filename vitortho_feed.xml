@@ -39358,8 +39358,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>2</VoorraadstatusCode>
-    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>1</VoorraadstatusCode>
+    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>8907</Artikelnummer>
@@ -58381,8 +58381,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>2</VoorraadstatusCode>
-    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>1</VoorraadstatusCode>
+    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>8970</Artikelnummer>
