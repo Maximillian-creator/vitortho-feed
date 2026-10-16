@@ -48730,8 +48730,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>0</VoorraadstatusCode>
-    <VoorraadstatusToelichting>niet op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>2</VoorraadstatusCode>
+    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>9070</Artikelnummer>
