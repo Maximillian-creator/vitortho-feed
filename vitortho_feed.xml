@@ -58381,8 +58381,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>1</VoorraadstatusCode>
-    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>2</VoorraadstatusCode>
+    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>8970</Artikelnummer>
@@ -64412,8 +64412,8 @@ Bevat: mosterd.&lt;br /&gt;Bevat niet: tarwe, gluten, soja, melk, ei, vis, schaa
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>0</VoorraadstatusCode>
-    <VoorraadstatusToelichting>niet op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>2</VoorraadstatusCode>
+    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>5122</Artikelnummer>
