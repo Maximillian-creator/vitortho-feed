@@ -54297,7 +54297,7 @@
     </Ingredientenspecificatie>
     <AllergenenBevat>Schaaldieren</AllergenenBevat>
     <AllergenenBevatMogelijk></AllergenenBevatMogelijk>
-    <AllergenenVrijVan>Tarwe, Gluten, Soja, Melk, Ei, Vis en  Noten</AllergenenVrijVan>
+    <AllergenenVrijVan>Tarwe, Soja, Melk, Ei, Vis, Noten en  Gluten</AllergenenVrijVan>
     <OnderscheidendVermogen></OnderscheidendVermogen>
     <Zoektags />
     <AfbeeldingUrl>https://images.vitortho.nl/rel/astercart/1440/89482.jpg</AfbeeldingUrl>
@@ -62363,8 +62363,8 @@ Bevat: mosterd.&lt;br /&gt;Bevat niet: tarwe, gluten, soja, melk, ei, vis, schaa
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>2</VoorraadstatusCode>
-    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>1</VoorraadstatusCode>
+    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>69121</Artikelnummer>
@@ -64580,8 +64580,8 @@ Bevat: mosterd.&lt;br /&gt;Bevat niet: tarwe, gluten, soja, melk, ei, vis, schaa
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>2</VoorraadstatusCode>
-    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>1</VoorraadstatusCode>
+    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>65200</Artikelnummer>
