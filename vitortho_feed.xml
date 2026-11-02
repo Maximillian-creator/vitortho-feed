@@ -38816,8 +38816,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>1</VoorraadstatusCode>
-    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>0</VoorraadstatusCode>
+    <VoorraadstatusToelichting>niet op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>8907</Artikelnummer>
