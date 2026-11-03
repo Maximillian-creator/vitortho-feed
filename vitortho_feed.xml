@@ -1201,7 +1201,7 @@
         <IsComment>false</IsComment>
       </Samenstellingpositie>
     </Samenstellingspecificatie>
-    <IngedientenDeclaratie>Extra vergine olijfolie, Softgelwand (Gelatine (rund), Water, Glycerine), Vitamine.</IngedientenDeclaratie>
+    <IngedientenDeclaratie>Extra vergine olijfolie, Softgelwand (Gelatine (rund), Water, Glycerine), Saffloerolie, Vitamine.</IngedientenDeclaratie>
     <Ingredientenspecificatie>
       <Ingredientenpositie>
         <Naam>Extra vergine olijfolie</Naam>
@@ -1259,12 +1259,23 @@
         <IsComment>false</IsComment>
       </Ingredientenpositie>
       <Ingredientenpositie>
-        <Naam>Vitamine</Naam>
+        <Naam>Saffloerolie</Naam>
         <Hoeveelheid></Hoeveelheid>
         <Info1></Info1>
         <Info2></Info2>
         <AdhRdh></AdhRdh>
         <Toonvolgorde>6</Toonvolgorde>
+        <Indent>0</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Vitamine</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>7</Toonvolgorde>
         <Indent>0</Indent>
         <IsAllergeen>false</IsAllergeen>
         <IsComment>false</IsComment>
@@ -28103,7 +28114,7 @@
         <IsComment>false</IsComment>
       </Samenstellingpositie>
     </Samenstellingspecificatie>
-    <IngedientenDeclaratie>Extra vergine olijfolie, Softgelwand (Gelatine (rund), Glycerine, Gezuiverd water), Vitamine.</IngedientenDeclaratie>
+    <IngedientenDeclaratie>Extra vergine olijfolie, Softgelwand (Gelatine (rund), Glycerine, Gezuiverd water), Saffloerolie, Vitamine.</IngedientenDeclaratie>
     <Ingredientenspecificatie>
       <Ingredientenpositie>
         <Naam>Extra vergine olijfolie</Naam>
@@ -28161,12 +28172,23 @@
         <IsComment>false</IsComment>
       </Ingredientenpositie>
       <Ingredientenpositie>
-        <Naam>Vitamine</Naam>
+        <Naam>Saffloerolie</Naam>
         <Hoeveelheid></Hoeveelheid>
         <Info1></Info1>
         <Info2></Info2>
         <AdhRdh></AdhRdh>
         <Toonvolgorde>6</Toonvolgorde>
+        <Indent>0</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Vitamine</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>7</Toonvolgorde>
         <Indent>0</Indent>
         <IsAllergeen>false</IsAllergeen>
         <IsComment>false</IsComment>
@@ -39951,7 +39973,7 @@
         <IsComment>false</IsComment>
       </Samenstellingpositie>
     </Samenstellingspecificatie>
-    <IngedientenDeclaratie>Extra vergine olijfolie, Softgelwand (Gelatine (rund), Water, Glycerine), Vitamine.</IngedientenDeclaratie>
+    <IngedientenDeclaratie>Extra vergine olijfolie, Softgelwand (Gelatine (rund), Water, Glycerine), Saffloerolie, Vitamine.</IngedientenDeclaratie>
     <Ingredientenspecificatie>
       <Ingredientenpositie>
         <Naam>Extra vergine olijfolie</Naam>
@@ -40009,12 +40031,23 @@
         <IsComment>false</IsComment>
       </Ingredientenpositie>
       <Ingredientenpositie>
-        <Naam>Vitamine</Naam>
+        <Naam>Saffloerolie</Naam>
         <Hoeveelheid></Hoeveelheid>
         <Info1></Info1>
         <Info2></Info2>
         <AdhRdh></AdhRdh>
         <Toonvolgorde>6</Toonvolgorde>
+        <Indent>0</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Vitamine</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>7</Toonvolgorde>
         <Indent>0</Indent>
         <IsAllergeen>false</IsAllergeen>
         <IsComment>false</IsComment>
