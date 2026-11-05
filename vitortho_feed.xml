@@ -88,7 +88,7 @@
     </Ingredientenspecificatie>
     <AllergenenBevat></AllergenenBevat>
     <AllergenenBevatMogelijk></AllergenenBevatMogelijk>
-    <AllergenenVrijVan>Tarwe, Gluten, Soja, Ei, Vis, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen, Synthetische smaakstoffen, Melk en  Schaaldieren</AllergenenVrijVan>
+    <AllergenenVrijVan>Tarwe, Gluten, Soja, Melk, Ei, Vis, Schaaldieren, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen en  Synthetische smaakstoffen</AllergenenVrijVan>
     <OnderscheidendVermogen>Vitamine B1 heeft een positieve invloed op de werking van het zenuwstelsel   Draagt bij aan het functioneren van het geheugen en de leerprestaties   Heeft een gunstige werking op het hart   Helpt energie vrij te maken uit de voeding</OnderscheidendVermogen>
     <Zoektags />
     <AfbeeldingUrl>https://images.vitortho.nl/rel/astercart/1440/3214.jpg</AfbeeldingUrl>
@@ -64624,8 +64624,8 @@ Bevat: mosterd.&lt;br /&gt;Bevat niet: tarwe, gluten, soja, melk, ei, vis, schaa
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>1</VoorraadstatusCode>
-    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>0</VoorraadstatusCode>
+    <VoorraadstatusToelichting>niet op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>65200</Artikelnummer>
