@@ -88,7 +88,7 @@
     </Ingredientenspecificatie>
     <AllergenenBevat></AllergenenBevat>
     <AllergenenBevatMogelijk></AllergenenBevatMogelijk>
-    <AllergenenVrijVan>Tarwe, Gluten, Soja, Melk, Ei, Vis, Schaaldieren, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen en  Synthetische smaakstoffen</AllergenenVrijVan>
+    <AllergenenVrijVan>Tarwe, Gluten, Soja, Ei, Vis, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen, Synthetische smaakstoffen, Melk en  Schaaldieren</AllergenenVrijVan>
     <OnderscheidendVermogen>Vitamine B1 heeft een positieve invloed op de werking van het zenuwstelsel   Draagt bij aan het functioneren van het geheugen en de leerprestaties   Heeft een gunstige werking op het hart   Helpt energie vrij te maken uit de voeding</OnderscheidendVermogen>
     <Zoektags />
     <AfbeeldingUrl>https://images.vitortho.nl/rel/astercart/1440/3214.jpg</AfbeeldingUrl>
@@ -10899,8 +10899,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>0</VoorraadstatusCode>
-    <VoorraadstatusToelichting>niet op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>2</VoorraadstatusCode>
+    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>7230</Artikelnummer>
@@ -23354,8 +23354,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>2</VoorraadstatusCode>
-    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>1</VoorraadstatusCode>
+    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>8329</Artikelnummer>
@@ -50836,7 +50836,7 @@
     </Ingredientenspecificatie>
     <AllergenenBevat></AllergenenBevat>
     <AllergenenBevatMogelijk></AllergenenBevatMogelijk>
-    <AllergenenVrijVan>Soja, Melk, Ei, Vis, Schaaldieren, Noten, Tarwe en  Gluten</AllergenenVrijVan>
+    <AllergenenVrijVan>Tarwe, Gluten, Soja, Melk, Ei, Vis, Schaaldieren en  Noten</AllergenenVrijVan>
     <OnderscheidendVermogen>Goed opneembare vorm van magnesium, gebonden aan appelzuur  Ondersteunt de werking van de spieren en het zenuwstelsel  Levert een bijdrage aan de elektrolytenbalans  Voor het behoud van sterke botten en tanden</OnderscheidendVermogen>
     <Zoektags />
     <AfbeeldingUrl>https://images.vitortho.nl/rel/astercart/1440/6516.jpg</AfbeeldingUrl>
@@ -64051,8 +64051,8 @@ Bevat: mosterd.&lt;br /&gt;Bevat niet: tarwe, gluten, soja, melk, ei, vis, schaa
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>2</VoorraadstatusCode>
-    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>1</VoorraadstatusCode>
+    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>89941</Artikelnummer>
