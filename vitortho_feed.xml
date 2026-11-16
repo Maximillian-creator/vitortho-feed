@@ -88,7 +88,7 @@
     </Ingredientenspecificatie>
     <AllergenenBevat></AllergenenBevat>
     <AllergenenBevatMogelijk></AllergenenBevatMogelijk>
-    <AllergenenVrijVan>Tarwe, Gluten, Soja, Melk, Ei, Vis, Schaaldieren, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen en  Synthetische smaakstoffen</AllergenenVrijVan>
+    <AllergenenVrijVan>Tarwe, Gluten, Soja, Ei, Vis, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen, Synthetische smaakstoffen, Schaaldieren en  Melk</AllergenenVrijVan>
     <OnderscheidendVermogen>Vitamine B1 heeft een positieve invloed op de werking van het zenuwstelsel   Draagt bij aan het functioneren van het geheugen en de leerprestaties   Heeft een gunstige werking op het hart   Helpt energie vrij te maken uit de voeding</OnderscheidendVermogen>
     <Zoektags />
     <AfbeeldingUrl>https://images.vitortho.nl/rel/astercart/1440/3214.jpg</AfbeeldingUrl>
@@ -7419,8 +7419,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>1</VoorraadstatusCode>
-    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>0</VoorraadstatusCode>
+    <VoorraadstatusToelichting>niet op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>7261</Artikelnummer>
@@ -18061,8 +18061,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>2</VoorraadstatusCode>
-    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>0</VoorraadstatusCode>
+    <VoorraadstatusToelichting>niet op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>6232</Artikelnummer>
@@ -26814,7 +26814,7 @@
         <IsComment>false</IsComment>
       </Samenstellingpositie>
     </Samenstellingspecificatie>
-    <IngedientenDeclaratie>Mineralen, Vitaminen, Capsulewand (Gelatine (rund/varken)), Antiklontermiddelen (Vetzuur, Magnesiumstearaat, Siliciumdioxide).</IngedientenDeclaratie>
+    <IngedientenDeclaratie>Mineralen, Vitaminen, Capsulewand (Gelatine (rund/varken)), Vulstoffen (Maltodextrine, Gemodificeerd zetmeel, Suiker), Antiklontermiddelen (Vetzuur, Maisolie, Siliciumdioxide), Antioxidant (D-alfa tocoferol, Natrium Ascorbaat).</IngedientenDeclaratie>
     <Ingredientenspecificatie>
       <Ingredientenpositie>
         <Naam>Mineralen</Naam>
@@ -26861,7 +26861,7 @@
         <IsComment>false</IsComment>
       </Ingredientenpositie>
       <Ingredientenpositie>
-        <Naam>Antiklontermiddelen</Naam>
+        <Naam>Vulstoffen</Naam>
         <Hoeveelheid></Hoeveelheid>
         <Info1></Info1>
         <Info2></Info2>
@@ -26872,7 +26872,7 @@
         <IsComment>false</IsComment>
       </Ingredientenpositie>
       <Ingredientenpositie>
-        <Naam>Vetzuur</Naam>
+        <Naam>Maltodextrine</Naam>
         <Hoeveelheid></Hoeveelheid>
         <Info1></Info1>
         <Info2></Info2>
@@ -26883,7 +26883,7 @@
         <IsComment>false</IsComment>
       </Ingredientenpositie>
       <Ingredientenpositie>
-        <Naam>Magnesiumstearaat</Naam>
+        <Naam>Gemodificeerd zetmeel</Naam>
         <Hoeveelheid></Hoeveelheid>
         <Info1></Info1>
         <Info2></Info2>
@@ -26894,12 +26894,89 @@
         <IsComment>false</IsComment>
       </Ingredientenpositie>
       <Ingredientenpositie>
-        <Naam>Siliciumdioxide</Naam>
+        <Naam>Suiker</Naam>
         <Hoeveelheid></Hoeveelheid>
         <Info1></Info1>
         <Info2></Info2>
         <AdhRdh></AdhRdh>
         <Toonvolgorde>8</Toonvolgorde>
+        <Indent>1</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Antiklontermiddelen</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>9</Toonvolgorde>
+        <Indent>0</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Vetzuur</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>10</Toonvolgorde>
+        <Indent>1</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Maisolie</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>11</Toonvolgorde>
+        <Indent>1</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Siliciumdioxide</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>12</Toonvolgorde>
+        <Indent>1</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Antioxidant</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>13</Toonvolgorde>
+        <Indent>0</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>D-alfa tocoferol</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>14</Toonvolgorde>
+        <Indent>1</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Natrium Ascorbaat</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>15</Toonvolgorde>
         <Indent>1</Indent>
         <IsAllergeen>false</IsAllergeen>
         <IsComment>false</IsComment>
@@ -55503,8 +55580,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>2</VoorraadstatusCode>
-    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>1</VoorraadstatusCode>
+    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>6190</Artikelnummer>
@@ -64282,8 +64359,8 @@ Bevat: mosterd.&lt;br /&gt;Bevat niet: tarwe, gluten, soja, melk, ei, vis, schaa
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>1</VoorraadstatusCode>
-    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>0</VoorraadstatusCode>
+    <VoorraadstatusToelichting>niet op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>89941</Artikelnummer>
