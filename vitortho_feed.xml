@@ -88,7 +88,7 @@
     </Ingredientenspecificatie>
     <AllergenenBevat></AllergenenBevat>
     <AllergenenBevatMogelijk></AllergenenBevatMogelijk>
-    <AllergenenVrijVan>Tarwe, Gluten, Soja, Melk, Ei, Vis, Schaaldieren, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen en  Synthetische smaakstoffen</AllergenenVrijVan>
+    <AllergenenVrijVan>Tarwe, Gluten, Soja, Ei, Vis, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen, Synthetische smaakstoffen, Melk en  Schaaldieren</AllergenenVrijVan>
     <OnderscheidendVermogen>Vitamine B1 heeft een positieve invloed op de werking van het zenuwstelsel   Draagt bij aan het functioneren van het geheugen en de leerprestaties   Heeft een gunstige werking op het hart   Helpt energie vrij te maken uit de voeding</OnderscheidendVermogen>
     <Zoektags />
     <AfbeeldingUrl>https://images.vitortho.nl/rel/astercart/1440/3214.jpg</AfbeeldingUrl>
@@ -23330,7 +23330,7 @@
     <Geschiktvoor>Geschikt voor vegetariërs en veganisten.</Geschiktvoor>
     <Bewaaradvies>Koel (maar niet in de koelkast), droog en buiten bereik van jonge kinderen bewaren.</Bewaaradvies>
     <Waarschuwingen>Raadpleeg uw gezondheidsprofessional, arts of apotheker bij zwangerschap, borstvoeding, medicijngebruik of onduidelijkheden.</Waarschuwingen>
-    <Gebruiksadvies>30 minuten voor het slapen gaan 1 zuigtablet onder de tong laten smelten, tenzij anders voorgeschreven door arts of therapeut. Houd u aan de aanbevolen dosering.</Gebruiksadvies>
+    <Gebruiksadvies>30 minuten voor het slapen gaan 1 zuigtablet onder de tong laten smelten, tenzij anders voorgeschreven door arts of therapeut. De aanbevolen dosering niet overschrijden.</Gebruiksadvies>
     <Verpakkingsinfo></Verpakkingsinfo>
     <Bijzonderheden>Melatoninepreparaat.  Natuurlijke variaties in kleur en geur en smaak van dit product zijn mogelijk.</Bijzonderheden>
     <Aantal>240</Aantal>
@@ -23442,7 +23442,7 @@
     </Ingredientenspecificatie>
     <AllergenenBevat></AllergenenBevat>
     <AllergenenBevatMogelijk></AllergenenBevatMogelijk>
-    <AllergenenVrijVan>Tarwe, Gluten, Soja, Melk, Ei, Vis, Schaaldieren, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen en  Synthetische smaakstoffen</AllergenenVrijVan>
+    <AllergenenVrijVan>Gelatine, Gist, Synthetische kleurstoffen, Synthetische geurstoffen en  Synthetische smaakstoffen</AllergenenVrijVan>
     <OnderscheidendVermogen></OnderscheidendVermogen>
     <Zoektags />
     <AfbeeldingUrl>https://images.vitortho.nl/rel/astercart/1440/8920.jpg</AfbeeldingUrl>
@@ -23453,8 +23453,8 @@
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
     <CombinedDescriptionHtml></CombinedDescriptionHtml>
-    <VoorraadstatusCode>1</VoorraadstatusCode>
-    <VoorraadstatusToelichting>beperkt op voorraad</VoorraadstatusToelichting>
+    <VoorraadstatusCode>2</VoorraadstatusCode>
+    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
   </Product>
   <Product>
     <Artikelnummer>8329</Artikelnummer>
