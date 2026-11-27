@@ -59907,7 +59907,7 @@
         <IsComment>false</IsComment>
       </Samenstellingpositie>
     </Samenstellingspecificatie>
-    <IngedientenDeclaratie>Enzymen, Artisjok, Capsulewand (Hydroxypropylmethylcellulose), Gember, Antiklontermiddelen (Calciumcarbonaat, Calciumfosfaat).</IngedientenDeclaratie>
+    <IngedientenDeclaratie>Enzymen, Artisjok, Capsulewand (Hydroxypropylmethylcellulose), Vulstof (Microkristallijne cellulose), Gember, Antiklontermiddelen (Calciumcarbonaat, Calciumfosfaat).</IngedientenDeclaratie>
     <Ingredientenspecificatie>
       <Ingredientenpositie>
         <Naam>Enzymen</Naam>
@@ -59954,7 +59954,7 @@
         <IsComment>false</IsComment>
       </Ingredientenpositie>
       <Ingredientenpositie>
-        <Naam>Gember</Naam>
+        <Naam>Vulstof</Naam>
         <Hoeveelheid></Hoeveelheid>
         <Info1></Info1>
         <Info2></Info2>
@@ -59965,12 +59965,34 @@
         <IsComment>false</IsComment>
       </Ingredientenpositie>
       <Ingredientenpositie>
-        <Naam>Antiklontermiddelen</Naam>
+        <Naam>Microkristallijne cellulose</Naam>
         <Hoeveelheid></Hoeveelheid>
         <Info1></Info1>
         <Info2></Info2>
         <AdhRdh></AdhRdh>
         <Toonvolgorde>6</Toonvolgorde>
+        <Indent>1</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Gember</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>7</Toonvolgorde>
+        <Indent>0</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+      <Ingredientenpositie>
+        <Naam>Antiklontermiddelen</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>8</Toonvolgorde>
         <Indent>0</Indent>
         <IsAllergeen>false</IsAllergeen>
         <IsComment>false</IsComment>
@@ -59981,7 +60003,7 @@
         <Info1></Info1>
         <Info2></Info2>
         <AdhRdh></AdhRdh>
-        <Toonvolgorde>7</Toonvolgorde>
+        <Toonvolgorde>9</Toonvolgorde>
         <Indent>1</Indent>
         <IsAllergeen>false</IsAllergeen>
         <IsComment>false</IsComment>
@@ -59992,7 +60014,7 @@
         <Info1></Info1>
         <Info2></Info2>
         <AdhRdh></AdhRdh>
-        <Toonvolgorde>8</Toonvolgorde>
+        <Toonvolgorde>10</Toonvolgorde>
         <Indent>1</Indent>
         <IsAllergeen>false</IsAllergeen>
         <IsComment>false</IsComment>
@@ -65465,6 +65487,108 @@ Bevat: mosterd.&lt;br /&gt;Bevat niet: tarwe, gluten, soja, melk, ei, vis, schaa
     <LabelUrlSmall>https://images.vitortho.nl/rel/labels/320/LBL9031.jpg</LabelUrlSmall>
     <LabelUrlMedium>https://images.vitortho.nl/rel/labels/1440/LBL9031.jpg</LabelUrlMedium>
     <LabelUrlLarge>https://images.vitortho.nl/rel/labels/2560/LBL9031.jpg</LabelUrlLarge>
+    <Combinatieproduct>false</Combinatieproduct>
+    <CombiNr1>0</CombiNr1>
+    <Combinr2>0</Combinr2>
+    <CombinedDescriptionHtml></CombinedDescriptionHtml>
+    <VoorraadstatusCode>2</VoorraadstatusCode>
+    <VoorraadstatusToelichting>ruim op voorraad</VoorraadstatusToelichting>
+  </Product>
+  <Product>
+    <Artikelnummer>8333</Artikelnummer>
+    <Categorie>Probiotica, vezels en enzymen</Categorie>
+    <Merk>VitOrtho</Merk>
+    <Produktnaam>Vezelcomplex</Produktnaam>
+    <Indicaties></Indicaties>
+    <Geschiktvoor>Geschikt voor vegetariërs en veganisten.</Geschiktvoor>
+    <Bewaaradvies>Koel (maar niet in de koelkast), droog en buiten bereik van jonge kinderen bewaren.</Bewaaradvies>
+    <Waarschuwingen>Niet gelijktijdig innemen met medicijnen. Houd minimaal 1-2 uur aan tussen het innemen van medicatie en vezels. Raadpleeg uw gezondheidsprofessional, arts of apotheker bij zwangerschap, borstvoeding, medicijngebruik of onduidelijkheden.</Waarschuwingen>
+    <Gebruiksadvies>1 maal daags 1 maatschep (5 gram) in 200 ml water of vruchtensap oplossen en opdrinken, tenzij anders voorgeschreven door arts of therapeut. De aanbevolen dosering niet overschrijden.</Gebruiksadvies>
+    <Verpakkingsinfo></Verpakkingsinfo>
+    <Bijzonderheden>Vezelpreparaat. Natuurlijke variaties in kleur en geur van dit product zijn mogelijk.  Inavea&lt;sup&gt;®&lt;/sup&gt; is een geregistreerd handelsmerk van Nexira. Sunfiber AG&lt;sup&gt;®&lt;/sup&gt; is een geregistreerd handelsmerk van Taiyo International, Inc.</Bijzonderheden>
+    <Aantal>200</Aantal>
+    <Vorm>gram</Vorm>
+    <Zindex></Zindex>
+    <Gtin>8717056142579</Gtin>
+    <NotificatieBE></NotificatieBE>
+    <RetailPrijs>27.9500</RetailPrijs>
+    <Diepte>0</Diepte>
+    <Breedte>0</Breedte>
+    <Hoogte>0</Hoogte>
+    <Gewicht>0.00</Gewicht>
+    <Omdoos>0</Omdoos>
+    <Overdoos>0</Overdoos>
+    <Pallet>0</Pallet>
+    <Samenstelling>Baobab en Acaciavezels , Inavea® 3000 mg, Guarboonvezels , Sunfiber® AG 2000 mg</Samenstelling>
+    <Samenstellingspecificatie>
+      <Samenstellingpositie>
+        <Naam>Baobab en Acaciavezels</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>1</Toonvolgorde>
+        <Indent>0</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Samenstellingpositie>
+      <Samenstellingpositie>
+        <Naam>Inavea®</Naam>
+        <Hoeveelheid>3000 mg</Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>2</Toonvolgorde>
+        <Indent>1</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Samenstellingpositie>
+      <Samenstellingpositie>
+        <Naam>Guarboonvezels</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>3</Toonvolgorde>
+        <Indent>0</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Samenstellingpositie>
+      <Samenstellingpositie>
+        <Naam>Sunfiber® AG</Naam>
+        <Hoeveelheid>2000 mg</Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>4</Toonvolgorde>
+        <Indent>1</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Samenstellingpositie>
+    </Samenstellingspecificatie>
+    <IngedientenDeclaratie>Vezels.</IngedientenDeclaratie>
+    <Ingredientenspecificatie>
+      <Ingredientenpositie>
+        <Naam>Vezels</Naam>
+        <Hoeveelheid></Hoeveelheid>
+        <Info1></Info1>
+        <Info2></Info2>
+        <AdhRdh></AdhRdh>
+        <Toonvolgorde>1</Toonvolgorde>
+        <Indent>0</Indent>
+        <IsAllergeen>false</IsAllergeen>
+        <IsComment>false</IsComment>
+      </Ingredientenpositie>
+    </Ingredientenspecificatie>
+    <AllergenenBevat></AllergenenBevat>
+    <AllergenenBevatMogelijk></AllergenenBevatMogelijk>
+    <AllergenenVrijVan>Tarwe, Gluten, Soja, Melk, Ei, Vis, Schaaldieren, Noten, Gelatine, Gist, Toegevoegde suikers, Synthetische kleurstoffen, Synthetische geurstoffen en  Synthetische smaakstoffen</AllergenenVrijVan>
+    <OnderscheidendVermogen></OnderscheidendVermogen>
+    <Zoektags />
+    <AfbeeldingUrl>https://images.vitortho.nl/rel/astercart/1440/8333.jpg</AfbeeldingUrl>
+    <LabelUrlSmall>https://images.vitortho.nl/rel/labels/320/LBL8333.jpg</LabelUrlSmall>
+    <LabelUrlMedium>https://images.vitortho.nl/rel/labels/1440/LBL8333.jpg</LabelUrlMedium>
+    <LabelUrlLarge>https://images.vitortho.nl/rel/labels/2560/LBL8333.jpg</LabelUrlLarge>
     <Combinatieproduct>false</Combinatieproduct>
     <CombiNr1>0</CombiNr1>
     <Combinr2>0</Combinr2>
